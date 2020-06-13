@@ -30,7 +30,7 @@ for i, slideimg in enumerate(slideimgs):
 		print("Saving slide: " + str(i))
 
 	imagefile = BytesIO()
-	slideimg.save(imagefile, format='tiff')
+	slideimg.save(imagefile, format='jpeg')
 	imagedata = imagefile.getvalue()
 	imagefile.seek(0)
 	width, height = slideimg.size
